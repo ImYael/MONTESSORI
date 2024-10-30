@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>El bosc dels somnis</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <!-- Barra de Navegació -->
+    <header>
+        <nav>
+            <div class="logo">
+                <h1 id="site-title">El bosc dels somnis</h1>
+            </div>
+            <ul>
+                <li><a href="#inicio" id="nav-home">Inici</a></li>
+                <li><a href="#nosotros" id="nav-about">Nosaltres</a></li>
+                <li><a href="#servicios" id="nav-services">Serveis</a></li>
+                <li><a href="#horaris" id="nav-schedule">Horaris</a></li>
+                <li><a href="#galeria" id="nav-gallery">Galeria</a></li>
+                <li><a href="#contacto" id="nav-contact">Contacte</a></li>
+            </ul>
+            <div class="language-selector">
+                <button onclick="changeLanguage('ca')">Català</button>
+                <button onclick="changeLanguage('es')">Castellano</button>
+                <button onclick="changeLanguage('en')">English</button>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Secció Inici -->
+    <section id="inicio" class="hero">
+        <div class="hero-content">
+            <h2 id="hero-title">Benvinguts a la Llar d'infants El bosc dels somnis</h2>
+            <p id="hero-description">Un lloc segur i divertit per als teus fills.</p>
+            <a href="#contacto" class="btn" id="hero-btn">Contacta'ns</a>
+        </div>
+    </section>
+
+    <!-- Secció Nosaltres -->
+    <section id="nosotros" class="about">
+        <h2 id="about-title">Qui Som?</h2>
+        <p id="about-description">El bosc dels somnis es un lloc on els teus infants poden viure una nova experiencia per poder aprendre d'una altra manera</p>
+    </section>
+    
+    <!-- Secció Serveis -->
+    <section id="servicios" class="services">
+        <h2 id="services-title">Els Nostres Serveis</h2>
+        <div class="gallery-container">
+            <div class="service">
+                <h3 id="service3-title">Menjador i servei de berenar</h3>
+                <p id="service3-description">Organitzem jocs, manualitats i activitats que fomenten la creativitat i el treball en equip.</p>
+                <img src="images/Menjador.png" alt="Menjador" class="gallery-img1">
+                <img src="images/ServeiBerenar.png" alt="Servei de berenar" id="gallery-img1">
+            </div>
+            <div class="service">
+                <h3 id="service1-title">Piscina i Zones de descans</h3>
+                <p id="service1-description">Oferim una cura personalitzada per a cada infant amb activitats educatives i recreatives.</p>
+                <img src="images/PiscinaNova.png" alt="Piscina Infantil" id="gallery-img2">
+                <img src="images/ZonaDescansNova.png" alt="Zona de descans" id="gallery-img2">
+            </div>
+            <div class="service">
+                <h3 id="service2-title">Pati exterior i interior</h3>
+                <p id="service2-description">El nostre programa preescolar està dissenyat per desenvolupar habilitats cognitives i socials.</p>
+                <img src="images/PatiInteriorNou.png" alt="Pati interior" id="gallery-img5">
+                <img src="images/PatiExteriorNou.png" alt="Pati exterior" id="gallery-img6">
+            </div>
+        </div>
+    </section>
+
+    <!-- Secció Horaris -->
+    <section id="horaris" class="schedule">
+        <h2 id="schedule-title">Horaris de la Llar</h2>
+        <div class="schedule-container">
+            <div class="schedule-item">
+                <img src="images/horario1.png" id="gallery-img1">
+                <img src="images/horario2.png" id="gallery-img1">
+                <img src="images/horario3.png" id="gallery-img1">
+            </div>
+            <div class="schedule-item">
+                <h3>Caps de Setmana</h3>
+                <p>Tancat</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Secció Galeria -->
+    <section id="galeria" class="gallery">
+        <h2 id="gallery-title">Galeria</h2>
+        <div class="gallery-container">
+            <img src="images/niñosjugando.png" alt="Infants jugant" id="gallery-img1">
+            <img src="images/juegosdentro.png" alt="Sala de jocs" id="gallery-img2">
+            <img src="images/airelibre.jpg" alt="Activitats a l'aire lliure" id="gallery-img3">
+            <img src="images/iogabbe.webp" alt="Piscina i Ioga" id="gallery-img4">
+        </div>
+    </section>
+
+    <!-- Secció Contacte -->
+    <section id="contacto" class="contact">
+        <h2 id="contact-title">Contacte</h2>
+        <form action="#">
+            <label for="nombre" id="contact-name-label">Nom:</label>
+            <input type="text" id="nombre" name="nombre" required>
+
+            <label for="email" id="contact-email-label">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="mensaje" id="contact-message-label">Missatge:</label>
+            <textarea id="mensaje" name="mensaje" required></textarea>
+
+            <button type="submit" class="btn" id="contact-submit">Enviar</button>
+        </form>
+    </section>
+
+    <!-- Peu de pàgina -->
+    <footer>
+        <p id="footer-text">&copy; 2024 Llar d'infants el bosc dels somnis. Tots els drets reservats.</p>
+    </footer>
+</body>
+</html>

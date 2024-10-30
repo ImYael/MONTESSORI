@@ -1,0 +1,304 @@
+/* Estilos globales */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    color: #fff; /* Color del texto en blanco */
+    background-color: rgb(98, 98, 143); /* Fondo azul claro */
+}
+
+/* Estilo de la barra de navegación */
+header {
+    background-color: #333; /* Barra de navegación oscura */
+    padding: 1rem 0;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+nav .logo h1 {
+    color: #ffcc80; /* Color más cálido para el logo */
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 1.5rem;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #ffcc80; /* Color cálido para los links */
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #ff5722; /* Color naranja en hover */
+}
+
+/* Estilo del banner principal (Hero) */
+.hero {
+    background-image: url('images/hero-background.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+}
+
+.hero-content {
+    max-width: 600px;
+    background-color: rgba(255, 87, 34, 0.7); /* Fondo con transparencia */
+    border-radius: 10px;
+    padding: 2rem;
+}
+
+.hero h2 {
+    font-size: 2.5rem;
+}
+
+.hero p {
+    margin: 1rem 0;
+    font-size: 1.2rem;
+}
+
+/* Botón */
+.btn {
+    background-color: #ff5722;
+    color: white;
+    padding: 0.8rem 1.5rem;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.btn:hover {
+    background-color: #e64a19;
+}
+
+/* Secciones centradas */
+.about, .services, .gallery, .contact, .schedule {
+    padding: 4rem 2rem;
+    text-align: center;
+    color: #fff; /* Texto blanco */
+}
+
+.about h2, .services h2, .gallery h2, .contact h2, .schedule h2 {
+    margin-bottom: 2rem;
+    font-size: 2rem;
+    color: #ffcc80; /* Títulos cálidos */
+}
+
+.about p, .services p, .schedule p {
+    max-width: 800px;
+    margin: 0 auto;
+    font-size: 1.2rem;
+}
+
+/* Sección Servicios */
+.service-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    
+}
+
+.service {
+    flex: 1;
+    margin: 1rem;
+    padding: 2rem;
+    background-color: #444; /* Fondo gris oscuro para las tarjetas de servicio */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.service h3 {
+    margin-bottom: 1rem;
+    color: #e64a19; /* Naranja para los títulos de servicio */
+}
+
+.service p {
+    font-size: 1rem;
+    color: #fff; /* Texto blanco */
+}
+/* Clase para uniformar el tamaño de las imágenes */
+.uniform-img {
+    width: 300px; /* Ancho de imagen */
+    height: 200px; /* Alto de imagen */
+    object-fit: cover; /* Asegura que la imagen se adapte bien al contenedor */
+    border-radius: 10px;
+}
+
+
+/* Sección Galería */
+.gallery-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
+}
+
+.gallery-container img {
+    border-radius: 10px;
+    height: 200px;
+    width: 320px;
+}
+
+/* Sección Contacto */
+form {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+form label {
+    display: block;
+    margin-bottom: 0.5rem;
+    color: #fff; /* Texto de formulario en blanco */
+}
+
+form input, form textarea {
+    width: 100%;
+    padding: 0.8rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #333; /* Fondo oscuro para los inputs */
+    color: white;
+}
+
+form button {
+    background-color: #ff5722;
+    color: white;
+    border: none;
+    padding: 1rem 2rem;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+form button:hover {
+    background-color: #e64a19;
+}
+
+/* Pie de página */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
+    margin-top: 2rem;
+}
+
+/* Selector de idiomas */
+.language-selector {
+    display: flex;
+    gap: 10px;
+    justify-content: center; /* Centra los botones de idioma */
+}
+
+.language-selector button {
+    background-color: #ff5722;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.language-selector button:hover {
+    background-color: #e64a19;
+}
+
+/* Estilos para la sección de horarios */
+.schedule-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column; /* Coloca los elementos en columna */
+    align-items: center; /* Centra los elementos */
+}
+
+.schedule-item {
+    margin: 1rem 0;
+    background-color: #444; /* Fondo oscuro para los horarios */
+    padding: 1.5rem;
+    border-radius: 10px;
+    width: 80%; /* Ancho ajustado para los elementos */
+    text-align: center;
+}
+
+.schedule-item h3 {
+    color: #ffcc80; /* Color cálido para los títulos de horarios */
+}
+
+.schedule-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 1rem;
+}
+/* Imagen de fondo en la sección Hero */
+.hero {
+    background-image: url('images/fondo-hero.jpg'); /* Cambia 'fondo-hero.jpg' por el nombre de tu imagen de fondo */
+    background-size: cover; /* La imagen de fondo cubrirá toda el área de la sección */
+    background-position: center; /* Centra la imagen de fondo */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+    padding: 4rem 2rem; /* Añade algo de espacio alrededor del contenido */
+    color: white; /* Cambia el color del texto a blanco para que se vea mejor sobre la imagen */
+    text-align: center; /* Centra el texto */
+}
+
+/* Estilos para el contenido de Hero */
+.hero-content {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: rgba(0, 0, 0, 0.5); /* Fondo semitransparente para mejorar la legibilidad */
+    padding: 2rem;
+    border-radius: 10px;
+}
+
+.hero h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin-bottom: 1.5rem;
+}
+
+.hero .btn {
+    background-color: #4caf50;
+    color: white;
+    padding: 0.75rem 1.5rem;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: background-color 0.3s;
+}
+
+.hero .btn:hover {
+    background-color: #388e3c;
+}
+
